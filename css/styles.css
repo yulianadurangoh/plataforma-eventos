@@ -1,0 +1,70 @@
+/* =========================================
+   AGENDA VIVA · Estilos propios
+   (Bootstrap hace la base responsive)
+   ========================================= */
+
+/* 1. Variables */
+:root {
+  --azul: #1B2A4A;
+  --ambar: #F2A541;
+  --fondo: #F7F8FC;
+  --texto: #222222;
+  --blanco: #FFFFFF;
+
+  --espacio-s: 1rem;
+  --espacio-m: 1.5rem;
+  --espacio-l: 3rem;
+}
+
+/* 2. Base */
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+/* 3. Barra de navegación */
+.navbar-agenda {
+  background-color: var(--azul);
+}
+
+/* 4. Portada de inicio */
+.portada {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: var(--espacio-l) var(--espacio-s);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+/* 5. Botón principal (ámbar con texto azul) */
+.btn-agenda {
+  background-color: var(--ambar);
+  color: var(--azul);
+  font-weight: 600;
+  border: none;
+}
+
+.btn-agenda:hover,
+.btn-agenda:focus {
+  background-color: var(--blanco);
+  color: var(--azul);
+}
+
+/* 6. Tarjetas de categorías */
+.tarjeta-categoria {
+  border-top: 4px solid var(--ambar);
+}
+
+/* 7. Formulario de inicio de sesión */
+.caja-login {
+  max-width: 28rem;
+  margin: var(--espacio-l) auto;
+}
+
+/* 8. Pie de página */
+.pie {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: var(--espacio-m);
+}

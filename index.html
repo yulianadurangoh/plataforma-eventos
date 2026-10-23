@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agenda Viva: consulta los próximos eventos académicos, tecnológicos y culturales.">
+  <title>Agenda Viva | Plataforma de eventos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark navbar-agenda">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Agenda Viva</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="btn btn-agenda ms-md-3" href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portada">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Vive los mejores eventos de tu ciudad</h1>
+        <p class="lead">Conferencias, talleres, conciertos y ferias: encuentra en un solo lugar los eventos académicos, tecnológicos y culturales que organizamos.</p>
+        <a class="btn btn-agenda btn-lg mt-3" href="login.html">Iniciar sesión para ver los eventos</a>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="text-center mb-4">¿Qué encontrarás?</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="card h-100 tarjeta-categoria">
+            <div class="card-body">
+              <h3 class="card-title h5">Eventos académicos</h3>
+              <p class="card-text">Conferencias, seminarios y charlas con expertos de distintas áreas del conocimiento.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card h-100 tarjeta-categoria">
+            <div class="card-body">
+              <h3 class="card-title h5">Eventos tecnológicos</h3>
+              <p class="card-text">Talleres de programación, hackatones y encuentros de comunidades tecnológicas.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card h-100 tarjeta-categoria">
+            <div class="card-body">
+              <h3 class="card-title h5">Eventos culturales</h3>
+              <p class="card-text">Conciertos, exposiciones, ferias del libro y presentaciones artísticas.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <h2 class="text-center mb-4">¿Cómo funciona?</h2>
+      <ol class="col-md-8 mx-auto">
+        <li>Inicia sesión con tu usuario y contraseña.</li>
+        <li>Consulta el listado de próximos eventos.</li>
+        <li>Revisa la fecha, la hora, el lugar y la descripción de cada evento.</li>
+        <li>Si tienes dudas, escríbenos desde el formulario de contacto o por WhatsApp.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="pie text-center">
+    <p class="mb-0">Agenda Viva · Plataforma de eventos · 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+Paso 4 · login.html (inicio de sesión)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicia sesión en Agenda Viva para consultar los próximos eventos.">
+  <title>Iniciar sesión | Agenda Viva</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark navbar-agenda">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Agenda Viva</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="caja-login card shadow-sm">
+      <div class="card-body p-4">
+        <h1 class="h3 text-center mb-4">Iniciar sesión</h1>
+
+        <form id="formulario-login">
+          <div class="mb-3">
+            <label for="usuario" class="form-label">Usuario</label>
+            <input type="text" id="usuario" name="usuario" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="clave" class="form-label">Contraseña</label>
+            <input type="password" id="clave" name="clave" class="form-control" required>
+          </div>
+
+          <p id="mensaje-error" class="alert alert-danger d-none" role="alert"></p>
+
+          <button type="submit" class="btn btn-agenda w-100">Ingresar</button>
+        </form>
+
+        <p class="text-center mt-3 mb-0"><a href="index.html">Volver al inicio</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie text-center">
+    <p class="mb-0">Agenda Viva · Plataforma de eventos · 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
