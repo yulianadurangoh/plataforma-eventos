@@ -1,6 +1,5 @@
 Paso 5 · js/login.js (validación de credenciales)
-// Credenciales definidas por el equipo (solo para fines académicos).
-// No usar contraseñas personales: cualquiera puede verlas en el navegador.
+
 const USUARIO_VALIDO = "admin";
 const CLAVE_VALIDA = "eventos2026";
 

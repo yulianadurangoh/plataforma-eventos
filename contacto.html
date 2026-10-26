@@ -1,23 +1,46 @@
-# Agenda Viva · Plataforma de eventos
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Nebula</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark navbar-agenda">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Nebula</a>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link active" href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-Plataforma web responsive para consultar eventos académicos, tecnológicos y culturales. Incluye inicio de sesión simulado, listado de eventos, formulario de contacto y botón de WhatsApp.
+  <main class="container py-5">
+    <h1 class="h3 mb-4">Contacto</h1>
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" id="correo" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea id="mensaje" rows="4" class="form-control" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-agenda">Enviar</button>
+    </form>
+  </main>
 
-## Tecnologías
-HTML, CSS, Bootstrap 5 y JavaScript.
-
-## Credenciales de prueba
-- Usuario: `admin`
-- Contraseña: `eventos2026`
-
-> Autenticación simulada con fines académicos. No ofrece seguridad real.
-
-## Estructura
-- `index.html`: página de inicio.
-- `login.html`: inicio de sesión.
-- `eventos.html`: listado de eventos.
-- `contacto.html`: formulario de contacto.
-- `css/styles.css`: estilos propios.
-- `js/login.js`: validación de credenciales.
-
-## Equipo
-- Yuliana Durango: página de inicio e inicio de sesión.
+  <footer class="pie text-center">
+    <p class="mb-0">Nebula · Plataforma de eventos · 2026</p>
+  </footer>
+</body>
+</html>

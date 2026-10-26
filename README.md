@@ -1,4 +1,4 @@
-# Agenda Viva · Plataforma de eventos
+# Nebula · Plataforma de eventos
 
 Plataforma web responsive para consultar eventos académicos, tecnológicos y culturales. Incluye inicio de sesión simulado, listado de eventos, formulario de contacto y botón de WhatsApp.
 
