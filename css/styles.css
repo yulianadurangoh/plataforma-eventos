@@ -68,3 +68,9 @@ body {
   color: var(--blanco);
   padding: var(--espacio-m);
 }
+
+/* Imágenes de las tarjetas de eventos */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}

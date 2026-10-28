@@ -1,17 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Eventos | Nebula</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+  const sesionActiva = sessionStorage.getItem("sesionActiva");
+
+  if (sesionActiva !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
 </head>
+
 <body>
+ 
+  <nav class="navbar navbar-expand-md navbar-dark navbar-agenda">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        Nebula
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="eventos.html">Eventos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
   <main class="container py-5">
-    <h1>Próximos eventos</h1>
-    <p>Página en construcción: aquí irán los eventos.</p>
-    <p><a href="index.html">Volver al inicio</a></p>
+
+    <div class="text-center mb-5">
+      <h1>Próximos eventos</h1>
+      <p>Descubre los próximos eventos académicos, tecnológicos y culturales.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+
+  <div class="card h-100">
+
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" 
+         class="card-img-top" 
+         alt="Personas participando en un evento tecnológico">
+
+    <div class="card-body">
+
+      <h2 class="card-title">Innovación y Tecnología 2026</h2>
+
+      <p class="card-text">
+        Encuentro sobre innovación, tecnología y nuevas herramientas
+        para transformar nuestras ideas en proyectos.
+      </p>
+
+      <p class="mb-1">
+        <strong>Fecha:</strong> 15 de noviembre de 2026
+      </p>
+
+      <p>
+        <strong>Ubicación:</strong> Medellín, Colombia
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="col-12 col-md-4">
+
+  <div class="card h-100">
+
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+         class="card-img-top"
+         alt="Persona trabajando en desarrollo web">
+
+    <div class="card-body">
+
+      <h2 class="card-title">Desarrollo Web y Nuevas Tecnologías</h2>
+
+      <p class="card-text">
+        Conferencia sobre las nuevas tendencias del desarrollo web
+        y las tecnologías que están transformando la industria.
+      </p>
+
+      <p class="mb-1">
+        <strong>Fecha:</strong> 22 de noviembre de 2026
+      </p>
+
+      <p>
+        <strong>Ubicación:</strong> Bogotá, Colombia
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="col-12 col-md-4">
+
+  <div class="card h-100">
+
+    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+         class="card-img-top"
+         alt="Inteligencia artificial y tecnología">
+
+    <div class="card-body">
+
+      <h2 class="card-title">Inteligencia Artificial para el Futuro</h2>
+
+      <p class="card-text">
+        Espacio para conocer aplicaciones de la inteligencia artificial
+        y su impacto en la educación, el trabajo y la sociedad.
+      </p>
+
+      <p class="mb-1">
+        <strong>Fecha:</strong> 29 de noviembre de 2026
+      </p>
+
+      <p>
+        <strong>Ubicación:</strong> Medellín, Colombia
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="col-12 col-md-4">
+
+  <div class="card h-100">
+
+    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d"
+         class="card-img-top"
+         alt="Personas realizando actividades científicas">
+
+    <div class="card-body">
+
+      <h2 class="card-title">Ciencia, Educación e Innovación</h2>
+
+      <p class="card-text">
+        Encuentro académico dedicado a compartir ideas y proyectos
+        que buscan mejorar la educación mediante la ciencia y la innovación.
+      </p>
+
+      <p class="mb-1">
+        <strong>Fecha:</strong> 6 de diciembre de 2026
+      </p>
+
+      <p>
+        <strong>Ubicación:</strong> Cali, Colombia
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="col-12 col-md-4">
+
+  <div class="card h-100">
+
+    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f"
+         class="card-img-top"
+         alt="Tecnología y cultura digital">
+
+    <div class="card-body">
+
+      <h2 class="card-title">Cultura Digital y Sociedad</h2>
+
+      <p class="card-text">
+        Conversatorio sobre la manera en que la tecnología influye
+        en nuestra comunicación, aprendizaje y vida cotidiana.
+      </p>
+
+      <p class="mb-1">
+        <strong>Fecha:</strong> 13 de diciembre de 2026
+      </p>
+
+      <p>
+        <strong>Ubicación:</strong> Cartagena, Colombia
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="col-12 col-md-4">
+
+  <div class="card h-100">
+
+    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72"
+         class="card-img-top"
+         alt="Personas reunidas en un evento de emprendimiento">
+
+    <div class="card-body">
+
+      <h2 class="card-title">Emprendimiento y Tecnología</h2>
+
+      <p class="card-text">
+        Encuentro para conocer proyectos tecnológicos, ideas de negocio
+        y experiencias de personas que están emprendiendo en el sector.
+      </p>
+
+      <p class="mb-1">
+        <strong>Fecha:</strong> 20 de diciembre de 2026
+      </p>
+
+      <p>
+        <strong>Ubicación:</strong> Medellín, Colombia
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+    </div>
+
   </main>
+
+  <footer class="pie text-center">
+    <p class="mb-0">Nebula · Plataforma de eventos · 2026</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
